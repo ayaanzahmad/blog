@@ -1,0 +1,24 @@
+
+#         012345678901234   This includes a final nuber of 4 becuase of the rule that was mentioned in line 5
+parrot = "Norwegian Blue"
+
+print(parrot[0:6])  # Norweg   When using slices the rule is Up to a certain number but does not include the final number.
+print(parrot[3:5])  # we
+print(parrot[0:9])  # Norwegian
+print(parrot[:9])   # Even with no start value the start value defaults to the start of the sequence
+print(parrot[10:14])# Blue
+print(parrot[10:])  # Even with no end value the start value defaults to the end of the sequence
+
+print(parrot[-4:-2])# Bl When using negative numbers it will start from the back end. Stops at the second last index but does not include it.
+print(parrot[-4:12])# Bl In this case it starts with the 4th last index and then ends at the 12th index but does not include it
+
+print(parrot[0:6:2])#Nre  The slice starts at position 0 extends up to but not including position 6 and steps through it at intervals of 2
+print(parrot[0:6:3])#Nw   The slice starts at position 0 extends up to but not including position 6 and steps through it at intervals of 3
+
+number="9,223,372,036,854,775,807"
+print(number[1::4])
+
+seperators = number[1::4]
+
+values = "".join(char if char not in seperators else " " for char in number).split()  #This command sepertates the numbers that were seperated by the symbols.  
+print([int(val) for val in values])

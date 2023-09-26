@@ -1,0 +1,24 @@
+a = 12
+b = 3
+
+print (a+b)    # 15
+print (a-b)    # 9
+print (a*b)    # 36
+print (a/b)    # 4.0 When doing division the answer comes out as a float result
+print (a // b) # 4 integer division, rounded down torwards minus infinity. Result comes out as an int. This can be useful when int is nessecary.
+print (a % b)  # 0 modulo: the remainder after integer division
+
+print()
+
+for i in range(1, 4):  # Must be an integer or else there will be an error saying float can not be interpreted as an interger.
+    print(i)           # For example if I did "for i in range(1, a / b):" it gives an error because the answer is a float.
+                       # In order to avoid this issue I could instaed type "for i in range(1, a // b )". This works because the answer is an integer.
+                       
+print()
+
+i=1               #These next 6 lines do the same thing that lines 13 and 14 do but in a more exoanded way
+print(i)
+i=2
+print(i)
+i=3
+print(i)

@@ -1,0 +1,27 @@
+splitString = "This string has been\nsplit over\nseveral\nlines"
+print(splitString)
+
+tabbedString = "1\t2\t3\t4\t5"
+print(tabbedString)
+
+print("The pet shop owner said 'No, no, \'e\'s uh,...he's resting'.")
+# or you can write it like this
+print("the pet shop owner said'No,no, 'e's uh,...he's resting\'.")
+
+#In my opinion this is the easiest way to use punctuation. This is becaused the code knows not to end the the string until the three quotes are seen.
+print("""The pet shop owner said " No, no, 'e's,...he's resting".""")
+
+anothersplitString = """This string has been \
+split \
+over \
+several \
+lines"""
+print(anothersplitString)
+#The back slashes negate the effect of the splitString being spread over several lines.
+
+print(anothersplitString)
+
+print("c:\\Users\\timbuchalka\\notes.txt")
+
+print(r"c:\Users\timbuchalka\notes.txt")
+
