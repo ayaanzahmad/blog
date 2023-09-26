@@ -9,13 +9,24 @@ print(thisdict)
 # Git is a version control ssoftware that saves a snapshot of the folder and its children
 """
 gt status 
-
+dshjfdshjkfhdskjlf kjsdakijhlsdhf
 git init
 git add .
 git commit -m 'message goes here'
 git push
-"""
+"""fsdfds
 
+deffdsa
+fsd
+finallyds
+s
+dfsda
+finallysd
+Falsedf
+sda
+fsd
+finally
+dsfsdfdsfds
 username = 1234567
 password = 9876543
 
