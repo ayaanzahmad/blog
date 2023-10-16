@@ -29,6 +29,9 @@ def create_user():
     users.append(new_user)
     print("Account created successfully!")
 
+def home_page():
+    print("Welcome to my blog!")
+    
 
 def login(username, password):
     for user in users:
@@ -50,7 +53,8 @@ def login_page():
 
             if login(username, password):
                 print("Welcome, " + username + "!")
-                break
+                home_page()
+                
             else:
                 print("Please try again.")
         elif choice == "2":
