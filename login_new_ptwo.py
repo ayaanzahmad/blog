@@ -1,12 +1,13 @@
-
 users = [
     {
         "username": "ayaan77@gmail.com",
         "password": "test123",
-        "firtName": "Ayaan",
+        "firstName": "Ayaan",
         "lastName": "Ahmad"
     }
 ]
+
+posts = []
 
 def create_user():
     print("Create a new user account")
@@ -29,25 +30,32 @@ def create_user():
     users.append(new_user)
     print("Account created successfully!")
 
+def home_page(username):
+    print("Welcome to my blog, " + username + "!")
+    print("Recent Posts:")
+    for post in posts:
+        print("User: " + post["username"])
+        print("Content: " + post["content"])
+    print("Would you like to make a post? If so, type 1. If not, type 2.")
+    choice2 = input("Enter your choice (1/2): ")
+    if choice2 == "1":
+        create_post(username)
 
-
-
-
-
-posts = []
-
-def home_page():
-    print("Welcome to my blog!")
-    
+def create_post(username):
+    post_content = input("Speak your mind: ")
+    post = {
+        "username": username,
+        "content": post_content
+    }
+    posts.append(post)
+    print("Post created successfully!")
+    home_page(username)
 
 def login(username, password):
     for user in users:
         if user["username"] == username and user["password"] == password:
             return True
-
     return False
-
-
 
 def login_page():
     print("Welcome to my blog!")
@@ -72,29 +80,3 @@ def login_page():
             print("Invalid choice.")
 
 login_page()
-
-
-
-
-def home_page(username):
-    print("Welcome to my blog, " + username + "!")
-    print("Recent Posts:")
-    for post in posts:
-        print(post)
-    print("would you like to make a post?If so type 1. If not type 2.")
-    choice2 = input("Enter your choice (1/2): ")
-    if choice2 == "1":
-        create_post()
-
-
-
-def create_post(username,):
-    post_content = input("Speak your mind")
-    post = {
-        "username": username,
-        "content": post_content
-    }
-    posts.append(post)
-    print("Post created successfully!")
-    home_page(username)
-
